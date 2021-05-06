@@ -77,6 +77,7 @@ class Game extends React.Component {
     this.setState({
       step: step,
       next: Boolean(step / 2),
+      history: this.state.history.slice(0, step + 1),
     });
   }
 
